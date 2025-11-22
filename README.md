@@ -1,4 +1,4 @@
-**Data Digger – SQL Project Project Objective**
+## Data Digger – SQL Project Project Objective
 
 The project "Data Digger" provides hands-on experience in managing a structured relational MySQL database. The goal is to understand and apply fundamental SQL operations such as CRUD, clauses like WHERE and ORDER BY, operators, aggregate functions (MAX, MIN, SUM), and database integrity using Primary and Foreign Keys.
 
