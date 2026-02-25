@@ -1,67 +1,132 @@
-## Data Digger – SQL Project Project Objective
+# Data Digger – SQL Project
 
-The project "Data Digger" provides hands-on experience in managing a structured relational MySQL database. The goal is to understand and apply fundamental SQL operations such as CRUD, clauses like WHERE and ORDER BY, operators, aggregate functions (MAX, MIN, SUM), and database integrity using Primary and Foreign Keys.
+---
+
+## Project Overview
+
+**Data Digger** is a foundational SQL project built using MySQL to simulate an E-Commerce database system.
+
+The project focuses on applying core SQL concepts including CRUD operations, filtering, sorting, aggregate functions, relationships, and data integrity using primary and foreign keys.
+
+It provides practical experience in managing relational data and generating business insights from transactional records.
+
+---
+
+## Project Objective
+
+* Build a structured relational database
+* Understand table relationships (One-to-Many, Many-to-Many)
+* Perform core SQL operations in a real-world business scenario
+* Generate insights using aggregation and grouping
+* Strengthen SQL fundamentals before advanced database systems
+
+---
 
 ## Database Structure
 
-The project uses four interrelated tables designed for an E-Commerce store:
+The system consists of four interrelated tables:
 
-Customers – Stores customer details.
+### 1. Customers
 
-Products – Stores product inventory, price, and stock details.
+Stores customer information such as name, contact details, and customer ID.
 
-Orders – Records main order information, linked to specific customers via CustomerID.
+### 2. Products
 
-OrderDetails – A linking table (many-to-many relationship) that records the quantity and subtotal of specific products (ProductID) within a specific order (OrderID).
+Maintains product inventory, pricing, and stock details.
 
-## Relationships
+### 3. Orders
 
-Customers → Orders: One-to-Many (via CustomerID)
+Contains order-level data linked to customers through a foreign key.
 
-Orders ↔ Products: Many-to-Many (via OrderDetails)
+### 4. OrderDetails
 
-SQL Concepts Covered
+A junction (linking) table that handles the many-to-many relationship between Orders and Products.
+It stores product quantity and subtotal per order.
 
-## Customers Table
+---
 
-Basic CRUD operations
+## Database Relationships
 
-Filtering using WHERE clause
+* Customers → Orders: One-to-Many (via CustomerID)
+* Orders ↔ Products: Many-to-Many (via OrderDetails)
 
-Searching by name
+This structure ensures proper relational mapping and referential integrity.
 
-Updating or deleting specific records
+---
 
-## Products Table
+## SQL Concepts Demonstrated
 
-Sorting data using ORDER BY (ascending or descending order)
+### Customers Table
 
-Filtering by range using BETWEEN
+* Insert, Update, Delete operations
+* Filtering using WHERE
+* Searching records by name
+* Record modification and deletion
 
-Applying aggregate functions:
+---
 
-MAX(Price) – Highest product price
+### Products Table
 
-MIN(Price) – Lowest product price
+* Sorting using ORDER BY (ascending & descending)
+* Filtering with BETWEEN
+* Aggregate functions:
 
-## Orders Table
+  * MAX(price) – Highest priced product
+  * MIN(price) – Lowest priced product
 
-Use of Foreign Keys (CustomerID relationship)
+---
 
-Working with date functions such as DATE_SUB
+### Orders Table
 
-Performing advanced aggregations:
+* Foreign key usage (CustomerID relationship)
+* Date filtering using DATE_SUB
+* Aggregations such as:
 
-MAX, MIN, and AVG on total order amounts
+  * MAX(total_amount)
+  * MIN(total_amount)
+  * AVG(total_amount)
 
-## OrderDetails Table
+---
 
-Handling relational data between Orders and Products
+### OrderDetails Table
 
-Calculating total revenue using SUM
+* Managing many-to-many relationships
+* Revenue calculation using SUM
+* Grouping and joins for business insights
 
-Creating joins and grouping data for business insights such as:
+---
 
-## Top 3 most sold products
+## Business Insights Generated
 
-Customers with the highest total purchase value
+* Top 3 most sold products
+* Customers with the highest total purchase value
+* Total revenue generated
+* Order activity within specific time ranges
+
+---
+
+## Skills Demonstrated
+
+* Relational Database Design
+* Primary & Foreign Key Implementation
+* CRUD Operations
+* Filtering & Sorting
+* Aggregate Functions
+* GROUP BY & Joins
+* Basic Business Reporting with SQL
+
+---
+
+## Conclusion
+
+Data Digger builds a strong foundation in SQL by applying essential database operations in an E-Commerce use case. It serves as a stepping stone toward more advanced database projects involving triggers, window functions, and complex reporting systems.
+
+---
+
+## Author
+
+Rajvi Trivedi
+Data Analyst | Business Analyst
+
+---
+
